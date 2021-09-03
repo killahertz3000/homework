@@ -23,13 +23,34 @@
             <div class="container header_flex">
                 <div class="header_left">
                     <div class="logo_top top_flex">
-                        <a class="logo" href="index.html"><img src="img/logo header.png" alt="logo"></a>
-                    </div>
-                    <div class="header_brand_black top_flex">
-                        <a class="header_brand_black" href="#">bran<span class="header_brand_pink">d</span></a>
+                        <a class="logo" href="index.html"><img src="img/logo header.png" alt="logo"><span
+                                class="header_brand_black">bran</span><span class="header_brand_pink">d</span></a>
                     </div>
                     <div class="header_browse top_flex">
-                        <a class="browse_button" href="#">browse<i class="fas fa-caret-down"></i></a>
+                        <a class="browse_button" href="#">browse<i class="fas fa-caret-down fas_bb"></i></a>
+                        <div class="browse_menu">
+                            <div class="menu">
+                                <div class="drop_box">
+                                    <div class="mega_item">
+                                        <h3 class="mega_heading">man</h3>
+                                        <a class="mega_link" href="product.html">Dresses</a>
+                                        <a class="mega_link" href="product.html">Tops</a>
+                                        <a class="mega_link" href="product.html">Jackets</a>
+                                        <a class="mega_link" href="product.html">Blazers</a>
+                                        <a class="mega_link" href="product.html">Denim</a>
+                                        <a class="mega_link" href="product.html">Shorts</a>
+                                        <a class="mega_link" href="product.html">Pants</a>
+                                        <a class="mega_link" href="product.html">Skirts</a>
+                                    </div>
+                                    <div class="mega_item">
+                                        <h3 class="mega_heading">man</h3>
+                                        <a class="mega_link" href="product.html">Dresses</a>
+                                        <a class="mega_link" href="product.html">Tops</a>
+                                        <a class="mega_link" href="product.html">Jackets</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <form class="header_search_for_item" action="#">
                             <input class="input_header_search_for_item" type="text" placeholder="Search for Item...">
                             <a class="fa_search_button" href="#"><i class="fas fa-search"></i></a>
@@ -37,12 +58,57 @@
                 </div>
                 <div class="header_right">
                     <div class="basket_flex top_flex">
-                        <a href="#">
+                        <a href="shoping cart.html">
                             <img src="img/basket_icon.png" alt="basket">
                         </a>
                     </div>
+
                     <div class="button_my_account_top top_flex">
-                        <a class="button_top my_account" href="#">My Account</a>
+                        <a class="button_top my_account" href="#">My Account
+                            <i class="fas fa-caret-down fas_bmat" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="card_menu">
+                        <div class="card_item">
+                            <div class="card_foto"> <a href="single_page.html"><img src="img/rectangle_24_1821.jpg"
+                                        alt="foto"></a>
+                            </div>
+                            <div class="card_desc">
+                                <p class="card_txt_b">Rebox Zane</p>
+                                <img src="img/______1824.png" alt="stars">
+                                <p class="card_txt_p">1 x $250</p>
+                            </div>
+                            <div class="card_button">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                        </div>
+                        <hr class="card_hr">
+                        <div class="card_item">
+                            <div class="card_foto"> <a href="single_page.html"><img src="img/rectangle_24_1821.jpg"
+                                        alt="foto"></a>
+                            </div>
+                            <div class="card_desc">
+                                <p class="card_txt_b">Rebox Zane</p>
+                                <img src="img/______1824.png" alt="stars">
+                                <p class="card_txt_p">1 x $250</p>
+                            </div>
+                            <div class="card_button">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                        </div>
+                        <hr class="card_hr">
+                        <div class="total_price">
+                            <div class="total">total
+                            </div>
+                            <div class="total">$500
+                            </div>
+                        </div>
+                        <div class="card_link">
+                            <a class="card_checkout" href="checkout.html">checkout</a>
+                        </div>
+                        <div class="card_link">
+                            <a class="go_to_car" href="checkout.html">Go to car</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -314,7 +380,7 @@
             <div class="breadcrumbs_right">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a class="breadcrumb_link" href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a class="breadcrumb_link" href="index.html">Home</a></li>
                         <li class="breadcrumb-item"><a class="breadcrumb_link" href="#">Men</a></li>
                         <li class="breadcrumb-item active" aria-current="page">New Arrivals</li>
                     </ol>
@@ -378,10 +444,10 @@
                                 <form action="#">
                                     <label class="already-label" for="email">email address <em
                                             class="red_txt">*</em></label> <br>
-                                    <input class="already-input" id="email" type="email"> <br>
+                                    <input class="already-input" required id="email" type="email"> <br>
                                     <label class="already-label" for="password">password <em
                                             class="red_txt">*</em></label> <br>
-                                    <input class="already-input" id="password" type="password">
+                                    <input class="already-input" required id="password" type="password">
                                     <p class="required">* Required Fileds</p>
                                     <div class="login-button__wrap">
                                         <button class="continue-button continue-button_already" type="button">log
