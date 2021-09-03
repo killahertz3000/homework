@@ -12,6 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/ce8f646b81.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -370,7 +372,7 @@
             </ul>
         </div>
     </nav>
-    <div class="breadcrumbs_section">
+    <nav class="breadcrumbs_section">
         <div class="container breadcrumbs_flex">
             <div class="breadcrumbs_left">
                 <a class="new_arrivals_link" href="#">new arrivals</a>
@@ -385,153 +387,151 @@
                 </nav>
             </div>
         </div>
+    </nav>
+    <div class="checkout-accordion">
+        <div class="accordion accordion-flush container" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header__checkout" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button my_accordion-button_checkout" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        01. Shipping Adress
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <div class="registration">
+                            <div class="guest">
+                                <div class="guest-paragraph_wrap">
+                                    <h4 class="guest-paragraph_header">check as a guest or register</h4>
+                                    <p class="guest-paragraph">Register with us for future convenience</p>
+                                </div>
+                                <div class="guest-radio">
+                                    <label class="radio-label" for="CHECKOUT AS A GUEST">
+                                        <input type="radio" id="CHECKOUT AS A GUEST" onchange="CHECKOUTASAGUEST">
+                                        CHECKOUT AS A GUEST
+                                    </label> <br>
+                                    <label class="radio-label" for="REGISTER">
+                                        <input type="radio" id="REGISTER" checked="checked" onchange="REGISTER">
+                                        REGISTER
+                                    </label>
+                                </div>
+                                <div class="register-paragraph">
+                                    <h4 class="guest-paragraph_header">register and save time!</h4>
+                                    <p class="guest-paragraph">Register with us for future convenience</p>
+                                </div>
+                                <div class="register_mini-list__wrap">
+                                    <ul class="register_mini-list">
+                                        <li><a class="register_mini-list__link" href="#"><i class="fas fa-chevron-right"
+                                                    aria-hidden="true"></i><i class="fas fa-chevron-right"
+                                                    aria-hidden="true"></i> Fast and easy checkout</a></li>
+                                        <li><a class="register_mini-list__link" href="#"><i class="fas fa-chevron-right"
+                                                    aria-hidden="true"></i><i class="fas fa-chevron-right"
+                                                    aria-hidden="true"></i> Easy access to your order history and
+                                                status</a></li>
+                                    </ul>
+                                </div>
+                                <div class="continue-button__wrap">
+                                    <button class="continue-button" type="button">continue</button>
+                                </div>
+                            </div>
+                            <div class="already">
+                                <div class="already-paragraph_wrap">
+                                    <h4 class="guest-paragraph_header">Already registed?</h4>
+                                    <p class="guest-paragraph">Please log in below</p>
+                                </div>
+                                <form action="#">
+                                    <label class="already-label" for="email">email address <em
+                                            class="red_txt">*</em></label> <br>
+                                    <input class="already-input" required id="email" type="email"> <br>
+                                    <label class="already-label" for="password">password <em
+                                            class="red_txt">*</em></label> <br>
+                                    <input class="already-input" required id="password" type="password">
+                                    <p class="required">* Required Fileds</p>
+                                    <div class="login-button__wrap">
+                                        <button class="continue-button continue-button_already" type="button">log
+                                            in</button>
+                                        <a class="already_mini-list__link" href="#">Forgot Password ?</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header__checkout" id="flush-headingTwo">
+                    <button class="accordion-button collapsed my_accordion-button_checkout" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                        aria-controls="flush-collapseTwo">
+                        02. BILLING INFORMATION
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header__checkout" id="flush-headingThree">
+                    <button class="accordion-button collapsed my_accordion-button_checkout" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                        aria-controls="flush-collapseThree">
+                        03. SHIPPING INFORMATION
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header__checkout" id="flush-headingThree">
+                    <button class="accordion-button collapsed my_accordion-button_checkout" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                        aria-controls="flush-collapseThree">
+                        04. SHIPPING METHOD
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header__checkout" id="flush-headingThree">
+                    <button class="accordion-button collapsed my_accordion-button_checkout" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                        aria-controls="flush-collapseThree">
+                        05. PAYMENT METHOD
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header__checkout" id="flush-headingThree">
+                    <button class="accordion-button collapsed my_accordion-button_checkout" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                        aria-controls="flush-collapseThree">
+                        06. ORDER REVIEW
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="carousel_block">
-        <div class="arrows arrows_left">
-            <i class="fas fa-angle-left"></i>
-        </div>
-        <div class="arrows arrows_right">
-            <i class="fas fa-angle-right"></i>
-        </div>
-        <div class="container">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/layer_42_2490.png" class="d-block w-50" alt="foto">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product_description">
-        <div class="container product_description_flex">
-            <p class="heading_text_pink">WOMEN COLLECTION</p>
-            <div class="white-pink">
-                <div class="white"></div>
-                <div class="pink"></div>
-                <div class="white"></div>
-            </div>
-            <p class="heading_text_black">Moschino Cheap And Chic</p>
-            <p class="product_description_p">Compellingly actualize fully researched processes before proactive
-                outsourcing. Progressively
-                syndicate
-                collaborative architectures before cutting-edge services. Completely visualize parallel core
-                competencies rather than exceptional portals.</p>
-            <div class="consist_description">
-                <p class="text_description_p">material:<span class="consist_description_color">cotton</span></p>
-                <p>designer:<span class="consist_description_color">binburnah</span></p>
-            </div>
-            <p class="price_single_page">$561</p>
-            <hr class="hr">
-            <div class="filter_flex">
-                <div class="filter_txt">CHOOSE COLOR
-                    <select class="color_select">
-                        <option><img src="img/rectangle_30_2566.jpg" alt="color">RED</option>
-                        <option>RED</option>
-                        <option>RED</option>
-                        <option>RED</option>
-                        <option>RED</option>
-                    </select>
-                </div>
-                <div class="filter_txt">CHOOSE SIZE
-                    <select class="color_select">
-                        <option>XXL</option>
-                        <option>XXL</option>
-                        <option>XXL</option>
-                        <option>XXL</option>
-                        <option>XXL</option>
-                    </select>
-                </div>
-                <div class="filter_txt">QUANTITY
-                    <select class="color_select">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-            </div>
-            <div class="filter_acordion">
-
-            </div>
-            <div class="add_to_cart_choose_button">
-                <a class="add_to_cart" href="#">
-                    <img src="img/forma_1_copy_2587.png" alt="cart">
-                    <p class="add_to_cart_txt">Add to Cart</p>
-                </a>
-            </div>
-        </div>
-    </div>
-    <section class="item_sec">
-        <div class="container">
-            <div class="fetured_items_block">
-                <h2 class="you_may_heading">you may like also</h2>
-            </div>
-            <div class="item_box">
-                <div class="item">
-                    <a class="item_link" href="#">
-                        <img class="item_img" src="img/catalog/catalog_1.jpg" alt="товар">
-                        <div class="txt_box">
-                            <h3 class="item_desc">Mango People T-shirt</h3>
-                            <p class="item_price">$52.00</p>
-                        </div>
-                    </a>
-                    <div class="add_box">
-                        <a class="add" href="#">
-                            <img src="img/forma_1_copy_1287.png" alt="cart">
-                            <p class="add_txt">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <a class="item_link" href="#">
-                        <img class="item_img" src="img/catalog/catalog_1.jpg" alt="товар">
-                        <div class="txt_box">
-                            <h3 class="item_desc">Mango People T-shirt</h3>
-                            <p class="item_price">$52.00</p>
-                        </div>
-                    </a>
-                    <div class="add_box">
-                        <a class="add" href="#">
-                            <img src="img/forma_1_copy_1287.png" alt="cart">
-                            <p class="add_txt">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <a class="item_link" href="#">
-                        <img class="item_img" src="img/catalog/catalog_1.jpg" alt="товар">
-                        <div class="txt_box">
-                            <h3 class="item_desc">Mango People T-shirt</h3>
-                            <p class="item_price">$52.00</p>
-                        </div>
-                    </a>
-                    <div class="add_box">
-                        <a class="add" href="#">
-                            <img src="img/forma_1_copy_1287.png" alt="cart">
-                            <p class="add_txt">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <a class="item_link" href="#">
-                        <img class="item_img" src="img/catalog/catalog_1.jpg" alt="товар">
-                        <div class="txt_box">
-                            <h3 class="item_desc">Mango People T-shirt</h3>
-                            <p class="item_price">$52.00</p>
-                        </div>
-                    </a>
-                    <div class="add_box">
-                        <a class="add" href="#">
-                            <img src="img/forma_1_copy_1287.png" alt="cart">
-                            <p class="add_txt">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <div class="subscribe_block">
         <div class="footer_blur">
             <div class="container subscribe_flex">
@@ -634,6 +634,9 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
